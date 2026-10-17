@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Заказ одежды для собаки</title>
+</head>
+<body>
+<div>
+    <a href="index.html">Главная</a> | <a href="catalog.html">Каталог</a> | <a href="measure.html">Как снять мерки</a> | <a href="delivery.html">Оплата и доставка</a> | <a href="catalog.html#razdel2">Популярные изделия</a> | <a href="dom_read.html">DOM_JS. Считываем информацию из DOM</a> | <a href="dom_change.html">Изменяем с кириллицы на латиницу по клику</a> | <a href="task_03.html">Решение алгоритмической задачи</a> | <a href="contact.html">Контакты</a> | <mark><b>Заказ</b></mark> | <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0" target="_blank">Википедия</a>
+</div>
+<hr>
+<h1>Формы. Заказ одежды для собаки</h1>
+<form action="https://www.bing.com/search?" method="get" target="_blank">
+    <input type="hidden" name="q" value="заказ одежды для собак">
+    <p>Ваше имя: <input type="text" name="client_name" value="Гость" required></p>
+    <p>Кличка собаки: <input type="text" name="dog_name" value="Пес" required></p>
+    <p>Изделие:
+        <input type="radio" name="item" value="Комбинезон" checked> Комбинезон
+        <input type="radio" name="item" value="Дождевик"> Дождевик
+        <input type="radio" name="item" value="Свитер"> Свитер
+        <input type="radio" name="item" value="Жилет"> Жилет
+        <input type="radio" name="item" value="Футболка"> Футболка
+        <input type="radio" name="item" value="Бандана"> Бандана
+        </p>
+    <p>Количество: <input type="number" name="quantity" value="1" min="1"></p>
+    <p><b>Мерки собаки, см</b></p>
+    <p>Длина спины: <input type="number" name="back_length" value="30" required></p>
+    <p>Обхват груди: <input type="number" name="chest_girth" value="45" required></p>
+    <p>Обхват шеи: <input type="number" name="neck_girth" value="30" required></p>
+    <p>Дополнительно:
+    <input type="checkbox" name="extras" value="Светоотражающие элементы" checked> Светоотражающие элементы
+    <input type="checkbox" name="extras" value="Вышивка клички"> Вышивка клички</p>
+    <p><b>Данные получателя для отправки</b></p>
+    <p>Серия и номер паспорта: <input type="number" name="passport" value="0000000000" required></p>
+    <p>Дата рождения: <input type="date" name="birth_date" value="2007-09-10" required></p>
+    <p>Пароль для просмотра заказа: <input type="password" name="order_password" value="dog2026" required></p>
+    <button type="reset">Обновить</button>
+    <button type="submit">Отправить</button>
+</form>
+
+</body>
+</html>

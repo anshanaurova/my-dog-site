@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Изменяем кириллицу на латиницу по клику</title>
+</head>
+<body>
+<div>
+    <a href="index.html">Главная</a> | <a href="catalog.html">Каталог</a> | <a href="measure.html">Как снять мерки</a> | <a href="delivery.html">Оплата и доставка</a> | <a href="catalog.html#razdel2">Популярные изделия</a> | <a href="dom_read.html">DOM_JS. Считываем информацию из DOM</a> | <mark><b>Изменяем кириллицу на латиницу по клику</b></mark> | <a href="task_03.html">Решение алгоритмической задачи</a> | <a href="contact.html">Контакты</a> | <a href="order.html">Заказ</a> | <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0" target="_blank">Википедия</a>
+</div>
+<hr>
+<h1>Изменяем кириллицу на латиницу по клику</h1>
+<style type="text/css">
+   .passport {
+    background-image: url(passport_shablon.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: 445px;
+    height: 620px;
+    overflow: hidden;
+   }
+   .block1 {
+   margin-left: 90px;
+   margin-top: 65px;
+   }
+   .date {
+   margin-left: 90px;
+   margin-top: 30px;
+   }
+   .number {
+   margin-left: 250px;
+   margin-top: -17px;
+   }
+   .fio {
+   margin-left: 218px;
+   margin-top: 185px;
+   }
+   .name {
+   margin-left: 225px;
+   margin-top: 29px;
+   }
+   .s_name {
+   margin-left: 210px;
+   margin-top: 4px;
+   }
+   .sex {
+   margin-left: 170px;
+   margin-top: 4px;
+   }
+   .date2 {
+   margin-left: 250px;
+   margin-top: -17px;
+   }
+   .place {
+   margin-left: 200px;
+   margin-top: 3px;
+   }
+   .photo {
+   margin-left: 40px;
+   margin-top: -80px;
+   }
+</style>
+<div class="passport">
+    <div class="block1">УФМС РОССИИ ПО ГОР. САНКТ-ПЕТЕРБУРГ <br> ПО РАЙОНУ x </div>
+    <div class="date"> 11.09.2021</div>
+    <div class="number"> 770-123 </div>
+    <div class="fio"> Шанаурова </div>
+    <div class="name"> Анита </div>
+    <div class="s_name"> Константиновна </div>
+    <div class="sex"> жен. </div>
+    <div class="date2"> 10.09.2007 </div>
+    <div class="place"> гор. Санкт-Петербург </div>
+    <div class="photo"> <img height="120" src="men.jpg" width="100"> </div>
+</div>
+
+<p id="change_all">
+    <u>Заменить фамилию и имя на латиницу</u>
+</p>
+<p id="change_back">
+    <u>Вернуть кириллицу</u>
+</p>
+
+<script src="js/dom_change.js"></script>
+</body>
+</html>
