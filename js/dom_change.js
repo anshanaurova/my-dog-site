@@ -1,27 +1,15 @@
-const node_for_click_all  = document.getElementById('change_all')
-const node_for_click_back = document.getElementById('change_back')
+const change = document.getElementById("change");
+change.addEventListener("click", change_all);
 
-function toLatin() {
-    const fio    = document.getElementsByTagName('div')[5]
-    const name   = document.getElementsByTagName('div')[6]
-    const s_name = document.getElementsByTagName('div')[7]
-
-    if (fio.innerHTML.trim() !== "Шанаурова") return
-    fio.innerHTML    = "Shanaurova"
-    name.innerHTML   = "Anita"
-    s_name.innerHTML = "Konstantinovna"
+function change_all() {
+    if (document.getElementsByTagName('div')[5].innerHTML.trim() === "Шанаурова") {
+        document.getElementsByTagName('div')[5].innerHTML = "Shanaurova";
+        document.getElementsByTagName('div')[6].innerHTML = "Anita";
+        document.getElementsByTagName('div')[7].innerHTML = "Konstantinovna";
+    }
+    else {
+        document.getElementsByTagName('div')[5].innerHTML = "Шанаурова";
+        document.getElementsByTagName('div')[6].innerHTML = "Анита";
+        document.getElementsByTagName('div')[7].innerHTML = "Константиновна";
+    }
 }
-
-function toCyrillic() {
-    const fio    = document.getElementsByTagName('div')[5]
-    const name   = document.getElementsByTagName('div')[6]
-    const s_name = document.getElementsByTagName('div')[7]
-
-    if (fio.innerHTML.trim() !== "Shanaurova") return
-    fio.innerHTML    = "Шанаурова"
-    name.innerHTML   = "Анита"
-    s_name.innerHTML = "Константиновна"
-}
-
-node_for_click_all.addEventListener('click', toLatin)
-node_for_click_back.addEventListener('click', toCyrillic)
